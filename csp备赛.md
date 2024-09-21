@@ -1,22 +1,14 @@
 # 目录
 
-![image-20240524124023039](E:\AUCode\csp\csp备赛.assets\image-20240524124023039.png)
+![image-20240921203523027](E:\AUCode\csp\csp备赛.assets\image-20240921203523027.png)
 
-![image-20240524124122417](E:\AUCode\csp\csp备赛.assets\image-20240524124122417.png)
-
-
+![image-20240921203710059](E:\AUCode\csp\csp备赛.assets\image-20240921203710059.png)
 
 # tactic
 
-根据考点背模板题、基础题
-
-<img src="E:/AUStudy/ACWing蓝桥杯/蓝桥杯省赛备赛.assets/image-20240411163758368.png" alt="image-20240411163758368" style="zoom:50%;" />
-
-二分、前缀和、差分、日期问题、dfs、bfs、dp
-
-双指针、kmp、树、并查集、哈希、stl、最大公约数
-
 **在编译时加入命令`-std=c++11`并✔**
+
+排序：贪心、减少时间复杂度
 
 
 
@@ -211,8 +203,8 @@ bool cmp_score(Student x,Student y){
 	return x.score > y.score;
 }
 
-
-
+//sort对vector对象 p 排序
+sort(p.begin(), p.end(), cmp);
 ```
 
 
@@ -280,6 +272,8 @@ int main()
 ## 14、判断日期是否合法（含平闰年判断）
 
 ```c++
+//闰年的2月有29天， 平年的2月有28天
+
 //闰年判断的两种条件
 //1、是4的倍数且不是100的倍数
 year % 4 == 0 && year % 100 != 0
